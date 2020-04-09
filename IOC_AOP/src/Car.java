@@ -1,3 +1,6 @@
+/**
+ * 一个Car类
+ */
 public class Car {
     private String name;
     private String length;

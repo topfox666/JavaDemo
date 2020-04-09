@@ -1,3 +1,6 @@
+/**
+ * 测试类
+ */
 public class SimpleIOCTest {
     public static void main(String[] args) throws Exception{
         SimpleIOCTest t=new SimpleIOCTest();
