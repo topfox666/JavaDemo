@@ -4,7 +4,7 @@
 
 public class TestStaticProxy {
     public static void main(String[] args) {
-        //创建具体实例的接口
+        //创建接口的具体实例
         IRegisterService iRegisterService=new RegisterServiceImpl();
         //创建代理，把需要代理的实例当做参数传入
         IRegisterService proxy=new RegisterServiceProxy(iRegisterService);
@@ -25,7 +25,7 @@ class RegisterServiceImpl implements IRegisterService {
         System.out.println(String.format("[向数据库插入数据]name:%s,pwd:%s",name,pwd));
     }
 }
-//静态代理类，通过传入具体实现的实例来增强具体实现的对象。
+//静态代理类，通过传入具体实现的实例来增强具体实现的对象，缺点：要实现一样的接口
 class RegisterServiceProxy implements IRegisterService {
 
     IRegisterService iRegisterService;

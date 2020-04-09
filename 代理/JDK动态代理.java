@@ -22,6 +22,7 @@ class InsertDataHandler implements InvocationHandler{
     Object obj;
     public Object getProxy(Object obj){
         this.obj=obj;
+        //返回一个代理，get了类、类加载器、以及类的父类、和对象，通过这些动态生成代理对象
         return Proxy.newProxyInstance(obj.getClass().getClassLoader(),obj.getClass().getInterfaces(),this);
     }
     @Override
