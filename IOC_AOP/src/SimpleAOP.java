@@ -10,7 +10,7 @@ public class SimpleAOP {
     public static Object getProxy(Object bean, Advice advice) {
         /**
          * 三个参数分别是:
-         * loader - 类加载器来定义代理类(getProxy方法所在的类)
+         * loader - 用哪个类加载器加载代理对象
          * interfaces - 代理类实现的接口列表(就是bean实现的接口)
          * h - 调度方法调用的调用处理函数(一个通知/handler)
          */

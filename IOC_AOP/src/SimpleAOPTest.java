@@ -14,5 +14,8 @@ public class SimpleAOPTest {
         HelloService helloServiceImplProxy = (HelloService) SimpleAOP.getProxy(helloServiceImpl,beforeAdvice);
         //相当于通知+目标对象对方法的实现
         helloServiceImplProxy.sayHelloWorld();
+
+
+
     }
 }
